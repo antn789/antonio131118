@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>suma de dos numeros</title>
+</head>
+<body>
+<script languaje ="javascript">
+	var numero1;
+	var numero2;
+	var resultado;
+	function sumar()
+	{
+		numero1=parseInt(document.formulario1.nro1.value);
+		numero2=parseInt(document.formulario1.nro2.value);
+		resultado=numero1+numero2;
+		document.formulario1.result.value=resultado;
+	}	
+		function resta()
+	{
+		numero1=parseInt(document.formulario1.nro1.value);
+		numero2=parseInt(document.formulario1.nro2.value);
+		resultado=numero1-numero2;
+		document.formulario1.result.value=resultado;
+	}
+		function multiplicar()
+	{
+		numero1=parseInt(document.formulario1.nro1.value);
+		numero2=parseInt(document.formulario1.nro2.value);
+		resultado=numero1*numero2;
+		document.formulario1.result.value=resultado;
+	}
+</script>
+	<h2>Suma de dos numeros</h2>
+	<form name="formulario1">
+		digitar numero 1: <input type="text" id="nro1"/><br />
+		digitar numero 2: <input type="text" id="nro2"/><br />
+		RESULTADO: <input type="text" id="result" /><br />
+		<input type="button" value="+" onclick="sumar()">
+		<input type="button" value="-" onclick="resta()">
+		<input type="button" value="*" onclick="multiplicar()">
+
+	</form>
+</body>
+</html>
