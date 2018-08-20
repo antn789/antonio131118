@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Plantilla_Video.master.cs" Inherits="P_Taller3.Plantilla_Video" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="global">           
+              <div id="contenido">                
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+            </div>
+             <div id="cabecera">
+                <h2>
+                    <img alt="a" class="auto-style1" longdesc="a" src="file:///C:/Users/Anto/source/repos/P_Taller3/P_Taller3/Portadas/V0000.jpg" /></h2>
+            </div>           
+             <div id="menu">              
+                
+                 <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Consolas" Font-Size="XX-Large" ForeColor="#666666" StaticSubMenuIndent="10px">
+                     <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                     <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                     <DynamicMenuStyle BackColor="#E3EAEB" />
+                     <DynamicSelectedStyle BackColor="#1C5E55" />
+                     <Items>
+                         <asp:MenuItem Text="Inicio" Value="Inicio" NavigateUrl="~/Inicio.aspx"></asp:MenuItem>
+<asp:MenuItem Text="Procesos" Value="Procesos"><asp:MenuItem Text="Alquilar" Value="Alquilar" NavigateUrl="~/Alquilar.aspx"></asp:MenuItem>
+<asp:MenuItem Text="Devolver" Value="Devolver"></asp:MenuItem>
+</asp:MenuItem>
+                         <asp:MenuItem Text="Video" Value="Video">
+                         </asp:MenuItem>
+                         <asp:MenuItem Text="Cliente" Value="Cliente">
+                             <asp:MenuItem Text="Nuevo" Value="Nuevo" NavigateUrl="~/Nuevo_Video.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Mantenimiento" Value="Mantenimiento" NavigateUrl="~/Mantenimiento_Video.aspx"></asp:MenuItem>
+                             <asp:MenuItem NavigateUrl="~/Nuevo_Cliente.aspx" Text="Nuevo" Value="Nuevo"></asp:MenuItem>
+                             <asp:MenuItem NavigateUrl="~/Mantenimiento_Cliente.aspx" Text="Mantenimiento" Value="Mantenimiento"></asp:MenuItem>
+                         </asp:MenuItem>
+                         <asp:MenuItem Text="Reporte" Value="Reporte"></asp:MenuItem>
+                     </Items>
+                     <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                     <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                     <StaticSelectedStyle BackColor="#1C5E55" />
+                 </asp:Menu>
+                
+             </div>
+        </div>
+    </form>
+</body>
+</html>

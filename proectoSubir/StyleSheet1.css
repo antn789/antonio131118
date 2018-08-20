@@ -1,0 +1,31 @@
+﻿#global {
+    height: 600px;
+    width: 800px;
+}
+
+#cabecera {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+
+    #cabecera h2 {
+        font-size: 18px;
+        font-family: Comic Sans MS;
+        text-align: center;
+    }
+
+#menu {
+    width: 200px;
+    height: 500px;
+    float: left;
+    background-color: #E3EAEB;
+}
+
+#contenido {
+    width: 600px;
+    height: 600px;
+    float: right;
+    background-color: skyblue;
+    background-position: left;
+}
